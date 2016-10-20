@@ -32,36 +32,35 @@ function onYouTubeIframeAPIReady() {
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
-    event.target.playVideo();
+    // event.target.playVideo();
     console.log(event);
 }
 
 // 5. The API calls this function when the player's state changes.
 //    The function indicates that when playing a video (state=1),
 //    the player should play for six seconds and then stop.
-var done = false;
 
 function onPlayerStateChange(event) {
     // console.log(event);
     if (event.data == -1) {
-    	// unstarted
+        // unstarted
         console.log('unstarted');
     } else if (event.data == 0) {
-    	// ended
+        // ended
         console.log('ended');
     } else if (event.data == 1) {
-    	// playing
+        // playing
         console.log('playing');
         playVideo();
     } else if (event.data == 2) {
-    	// paused
+        // paused
         console.log('paused');
         pauseVideo();
     } else if (event.data == 3) {
-    	// buffering
+        // buffering
         console.log('buffering');
     } else if (event.data == 5) {
-    	// video cued
+        // video cued
         console.log('video cued');
     }
 }
@@ -85,14 +84,13 @@ $(window).load(function() {
 
     $('.touch-swap').css('display', 'block');
 
-    $('.touch-swap').mouseup(function() {
+    $('body').on('mouseup touchend', '.touch-swap', function() {
         $('#video_1').css('display', 'block');
     });
 
-    $('.touch-swap').mousedown(function() {
+    $('body').on('mousedown touchstart', '.touch-swap', function() {
         $('#video_1').css('display', 'none');
     });
 });
 
-$(document).ready(function() {
-});
+$(document).ready(function() {});

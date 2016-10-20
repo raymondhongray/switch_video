@@ -1,3 +1,67 @@
+@media all and (min-width: 414px) {
+    .touch-swap {
+        width: 25%;
+    }
+    .video-box {
+        width: 99%;
+        padding-bottom: 52%;
+    }
+}
+
+@media all and (min-width: 485px) {
+    .touch-swap {
+        width: 20%;
+    }
+    .video-box {
+        width: 90%;
+        padding-bottom: 35%;
+    }
+}
+
+@media all and (min-width: 640px) {
+    .touch-swap {
+        width: 15%;
+    }
+    .video-box {
+        width: 80%;
+        padding-bottom: 35%;
+    }
+}
+
+@media all and (min-width: 776px) {
+    .touch-swap {
+        width: 15%;
+    }
+}
+
+@media all and (min-width: 900px) {
+    .touch-swap {
+        width: 12%;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .touch-swap {
+        width: 10%;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    .touch-swap {
+        width: 6%;
+    }
+}
+
+@media not all and (min-width: 414px) {
+    .touch-swap {
+        width: 25%;
+    }
+    .video-box {
+        width: 99%;
+        padding-bottom: 52%;
+    }
+}
+
 html {
     height: 100%;
 }
@@ -17,7 +81,9 @@ body {
     background: #000;
 }
 
+
 /*http://www.heropatterns.com/*/
+
 .container {
     position: relative;
     width: 100%;
@@ -29,7 +95,7 @@ body {
 
 .video-box {
     position: relative;
-    width: 80%;
+    /*width: 80%;*/
     height: 0;
     top: 45%;
     -webkit-transform: translateY(-50%);
@@ -39,7 +105,7 @@ body {
     z-index: 100;
     margin: auto;
     display: block;
-    padding-bottom: 35%;
+    /*padding-bottom: 35%;*/
 }
 
 .video-box > .youtube-iframe {
@@ -54,7 +120,7 @@ body {
     position: absolute;
     margin: auto;
     display: block;
-    width: 6%;
+    /*width: 6%;*/
     bottom: -150px;
     z-index: 100000;
     background: #fff;
