@@ -1,0 +1,67 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #000;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #7f0013;
+    opacity: 1.0;
+}
+
+.video-box {
+    position: relative;
+    width: 80%;
+    height: 0;
+    top: 45%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 100;
+    margin: auto;
+    display: block;
+    padding-bottom: 35%;
+}
+
+.video-box > .youtube-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.touch-swap {
+    position: absolute;
+    margin: auto;
+    display: block;
+    width: 6%;
+    bottom: -150px;
+    z-index: 100000;
+    background: #fff;
+    border-radius: 99em;
+    padding: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    cursor: pointer;
+}
